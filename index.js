@@ -46,13 +46,16 @@ trade.itemsForSales();
 // ====================
  
 trade.totalCost();
-// "Oak furniture" bought furniture for 1310 EUR totally!
+// "Oak furniture" bought furniture for 1310 EUR totally.
 
-//trade.totalProfit();
-// "Oak furniture" profit is 530 EUR totally!
+trade.turnover();
+// "Oak furniture" turnover is 1840 EUR totally.
 
-//trade.surchargeAverage();
-// Average of total surcharge is 53 EUR!
+trade.totalProfit();
+// "Oak furniture" profit is 530 EUR totally.
+
+trade.surchargeAverage();
+// Average of total surcharge is 53 EUR.
 
 
 

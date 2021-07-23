@@ -39,8 +39,37 @@ class Sales {
         console.log('====================');
     }
     totalCost() {   
-        console.log(this.itemsData);
-    }      
+        let costTotal = 0;
+        for (const item of this.itemsData) {
+            costTotal += item.qty * item.cost;
+        }
+        this.costTotal = costTotal;
+        console.log(`"${this.shopName}" bought furniture for ${this.costTotal} EUR totally.`);
+    }
+    turnover() {   
+        let priceTotal = 0;
+        for (const item of this.itemsData) {
+            priceTotal += item.qty * item.price;
+        }
+        this.priceTotal  = priceTotal;
+        console.log(`"${this.shopName}" turnover is ${this.priceTotal} EUR totally.`);
+    }
+
+    totalProfit() {
+        const profit = this.priceTotal - this.costTotal;
+        console.log(`"${this.shopName}" profit is ${profit} EUR totally.`);
+        this.profit = profit;
+    }
+    surchargeAverage() {
+        let count = 0;
+        for (const item of this.itemsData) {
+            count += item.qty;
+            this.count = count;
+            const average = this.profit / this.count;
+            this.average = average;
+        }
+        console.log(`Average of total surcharge is ${this.average} EUR.`);
+    }
 }
 
 module.exports = Sales;

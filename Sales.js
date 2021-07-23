@@ -25,10 +25,22 @@ class Sales {
         console.log('====================');
         let index = 0;
         for (const item of this.itemsData) {
-                console.log(`${++index}) ${item.name} - ${item.qty}pcs by ${item.cost} ${this.curr}/pc;`);
+                console.log(`${++index}) ${item.name} - ${item.qty}pcs for ${item.cost} ${this.curr}/pc;`);
         }
-        console.log(`====================`);
+        console.log('====================');
     }
+    itemsForSales() {
+        console.log(`"${this.shopName}" offers:`);
+        console.log('====================');
+        let index = 0;
+        for (const item of this.itemsData) {
+                console.log(`${++index}) ${item.name} - ${item.qty}pcs for ${item.price} ${this.curr}/pc;`);
+        }
+        console.log('====================');
+    }
+    totalCost() {   
+        console.log(this.itemsData);
+        
 }
 
 module.exports = Sales;

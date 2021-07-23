@@ -16,15 +16,18 @@ class Sales {
             qty: itemQty,
             cost: itemCost,
             price: itemPrice,
+            purchased: true
         })
         console.log(`"${this.shopName}" bought ${itemQty} ${itemName} for cost ${itemCost} ${this.curr} and plans to sell it for price ${itemPrice} ${this.curr}.`);
     }
     itemsBought() {
         console.log(`Total items bought by "${this.shopName}":`);
         console.log('====================');
-
-
-        console.log('====================');
+        let index = 0;
+        for (const item of this.itemsData) {
+                console.log(`${++index}) ${item.name} - ${item.qty}pcs by ${item.cost} ${this.curr}/pc;`);
+        }
+        console.log(`====================`);
     }
 }
 

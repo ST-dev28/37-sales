@@ -25,14 +25,14 @@ trade.addItem('oak cabinet', 2, 200, 280);
 trade.addItem('oak wardrobe', 1, 300, 400);
 // "Oak furniture" bought 1 oak wardrobes for cost 300 EUR and plans to sell is for price 400 EUR. 
 
-//trade.itemsBought();
+trade.itemsBought();
 // Total items bought by "Oak furniture":
 // ====================
-// 1) oak table - 2pcs for 300 EUR;
-// 2) oak bench - 1pc for 110 EUR;
-// 3) oak chair - 4pcs for 200 EUR;
-// 4) oak cabinet - 2pcs for 400 EUR;
-// 5) oak wardrobe - 1pc for 300 EUR;
+// 1) oak table - 2pcs by 150 EUR/pc;
+// 2) oak bench - 1pc by 110 EUR/pc;
+// 3) oak chair - 4pcs by 50 EUR/pc;
+// 4) oak cabinet - 2pcs by 200 EUR/pc;
+// 5) oak wardrobe - 1pc by 300 EUR/pc;
 // ====================
 
 //trade.itemsForSales();

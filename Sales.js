@@ -40,7 +40,7 @@ class Sales {
     }
     totalCost() {   
         console.log(this.itemsData);
-        
+    }      
 }
 
 module.exports = Sales;
